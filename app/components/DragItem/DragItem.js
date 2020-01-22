@@ -11,9 +11,12 @@ export default function DragItem({ dragEffect, data, id }) {
     id,
     effect: dragEffect,
     ref: dragRef,
-    onDragStart: () => setClassValue('grabbing'),
+    onDragStart: () => {
+    setClassValue('grabbing')
+    },
+
     onDragEnd: () => {
-      setClassValue('grab');
+    setClassValue('grab')
     }
   });
   
