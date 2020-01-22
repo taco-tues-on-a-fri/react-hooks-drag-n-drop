@@ -12,7 +12,6 @@ const useModal = () => {
       const keys = {
         27: () => {
           event.preventDefault();
-          // onCloseRequest();
           toggle();
           window.removeEventListener('keyup', handleKeyUp, false);
         }
