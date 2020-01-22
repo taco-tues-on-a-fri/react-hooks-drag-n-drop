@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useCallback, useState } from "react";
+import { useEffect, useCallback, useState } from 'react';
 
 const useModal = () => {
   const [isShowing, setIsShowing] = useState(false);
@@ -13,8 +13,8 @@ const useModal = () => {
         27: () => {
           event.preventDefault();
           // onCloseRequest();
-          toggle()
-          window.removeEventListener("keyup", handleKeyUp, false);
+          toggle();
+          window.removeEventListener('keyup', handleKeyUp, false);
         }
       };
 
@@ -27,17 +27,17 @@ const useModal = () => {
 
   useEffect(() => {
     if (isShowing === true) {
-    window.addEventListener("keyup", handleKeyUp, false);
+      window.addEventListener('keyup', handleKeyUp, false);
 
-    return () => {
-      window.removeEventListener("keyup", handleKeyUp, false);
-    };
-  }}, [handleKeyUp]);
+      return () => {
+        window.removeEventListener('keyup', handleKeyUp, false);
+      };
+    }}, [handleKeyUp]);
 
   return {
     isShowing,
     toggle,
-  }
+  };
 };
 
 export default useModal;
