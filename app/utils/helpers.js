@@ -2,7 +2,7 @@
 //|------------------------------------------------------------------------
 export function addIndex(data) {
   const computedProperty = data.reduce((accumulator, item) => {
-    const { type, title, position } = item;
+    const { position } = item;
     return {...accumulator, [position]: {...(accumulator[position] || {}), ...item}};
   }, {});
 
