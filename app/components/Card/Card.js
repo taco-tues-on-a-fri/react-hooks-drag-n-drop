@@ -8,7 +8,7 @@ export default function Card({ type, title, position }) {
   
   return (
     <div className="card" key={position}>
-      <img onClick={toggle} className="img" variant="top" src={imageSwitch(type)} />
+      <img onClick={toggle} className="img card-img-top" variant="top" src={imageSwitch(type)} />
       <Modal
         isShowing={isShowing}
         hide={toggle}
