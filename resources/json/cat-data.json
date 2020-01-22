@@ -1,0 +1,8 @@
+[
+  { "type": "slinky-cat-01", "title": "Wiggle Boi", "position": 0 },
+  { "type": "slinky-cat-02", "title": "Voronoi Pepperoni", "position": 1 },
+  { "type": "jedi-cat-01", "title": "Wizard Fingers", "position": 2 },
+  { "type": "jedi-cat-02", "title": "Dr. Skoots", "position": 3 },
+  { "type": "fancy-cat-01", "title": "Ketchup", "position": 4 },
+  { "type": "fancy-cat-02", "title": "Nightmare", "position": 5 }
+]
