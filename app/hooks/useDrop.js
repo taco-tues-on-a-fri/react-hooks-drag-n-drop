@@ -10,7 +10,7 @@ const useDrop = ({ ref, onDrop }) => {
 
   const dropCb = event => {
     event.preventDefault();
-    onDrop(ev.dataTransfer.getData('source'));
+    onDrop(event.dataTransfer.getData('source'));
     updateDropState('dropped');
   };
 
