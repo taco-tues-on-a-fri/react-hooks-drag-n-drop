@@ -1,25 +1,15 @@
 .item {
   background: white;
-  border-radius: 5px;
-  margin: 10px;
-  padding: 10px;
-  text-align: left;
+  border-radius: 12px;
   box-shadow: 0 1px 0 rgba(9, 45, 66, 0.25);
+  margin: 1rem;
+  padding: 10px;
+}
+
+.grab {
+  cursor: grab;
 }
 
 .item:hover {
-  cursor: pointer;
   background: #f5f6f7;
-}
-
-.item:nth-child(1n) h1 {
-  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
-}
-
-.item:nth-child(4n) h1 {
-  background-image: linear-gradient(120deg, #ff9a9e 0%, #fecfef 100%);
-}
-
-.item:nth-child(5n) h1 {
-  background-image: linear-gradient(120deg, #ffc3a0 0%, #ffafbd 100%);
 }

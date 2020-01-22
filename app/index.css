@@ -3,65 +3,99 @@ body,
 #app {
   background: #f6f6f6;
   color: #666;
+  font-family: "Dosis", sans-serif;
+  font-size: 62.5%;
   height: 100%;
   line-height: 1.6;
-  max-width: 1200px;
   margin: 0 auto;
+  max-width: 1200px;
   width: 100%;
 }
 .area {
-  width: 70%;
-  margin-left: 100px;
   border: 1px dotted;
+  margin-left: 100px;
+  width: 70%;
+}
+
+.card {
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  border-radius: 12px;
+  box-shadow: 2px 4px 25px rgba(0, 0, 0, 0.1);
+  font-size: 2rem;
+  margin: 1rem;
+  overflow: hidden;
+  transition: all 0.2s linear;
+}
+
+.card-img-top {
+  border-radius: 55px;
+  height: 10vw;
+  object-fit: cover;
+  padding: 0px;
+  width: 85%;
+}
+
+.card-img-top:hover {
+  cursor: pointer;
+}
+
+.card:hover {
+  box-shadow: 2px 8px 45px rgba(0, 0, 0, 0.15);
+  transform: translate3D(0, -2px, 0);
+}
+
+.card:nth-child(1n) div {
+  background-image: linear-gradient(120deg, #ff9a9e 0%, #fecfef 100%);
+}
+
+.center-text {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container-column {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 12px;
+  width: 100%;
+}
+
+.elem {
+  border: 1px solid magenta;
+  height: 50px;
+  width: 50px;
+}
+
+.grab {
+  cursor: grab;
+}
+
+.grabbing {
+  border: 10px dotted;
+  cursor: grabbing;
+}
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+h1 {
+  background-image: linear-gradient(120deg, #fbc2eb 0%, #a6c1ee 100%);
+  color: white;
+  font-size: 1.5rem;
+  margin: 0 0 2rem 0;
+  padding: 1.5rem 2.5rem;
+  text-align: center;
 }
 
 .img {
   display: block;
   margin: 1rem auto;
   max-width: 100%;
-}
-
-h1 {
-  text-align: center;
-  padding: 1.5rem 2.5rem;
-  background-image: linear-gradient(120deg, #fbc2eb 0%, #a6c1ee 100%);
-  margin: 0 0 2rem 0;
-  font-size: 1.5rem;
-  color: white;
-}
-.body {
-  font-family: "Dosis", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-    Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
-}
-
-.box {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  padding-top: 12px;
-}
-.container {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.cardold {
-  margin: 10px 0;
-  width: 250px;
-  padding: 20px;
-}
-.card {
-  margin: 1rem;
-  background: white;
-  box-shadow: 2px 4px 25px rgba(0, 0, 0, 0.1);
-  border-radius: 12px;
-  overflow: hidden;
-  transition: all 0.2s linear;
-}
-
-.card:hover {
-  box-shadow: 2px 8px 45px rgba(0, 0, 0, 0.15);
-  transform: translate3D(0, -2px, 0);
 }
 
 @media screen and (min-width: 600px) {
@@ -76,57 +110,15 @@ h1 {
   }
 }
 
-.card:nth-child(1n) div {
-  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
-}
-
-.card:nth-child(4n) div {
-  background-image: linear-gradient(120deg, #ff9a9e 0%, #fecfef 100%);
-}
-
-.card:nth-child(5n) div {
-  background-image: linear-gradient(120deg, #ffc3a0 0%, #ffafbd 100%);
-}
-
-.center-text {
-  text-align: center;
-}
-
-.card-img-top {
-  width: 90%;
-  height: 10vw;
-  object-fit: cover;
-  padding: 10px;
-}
-
-.elem {
-  height: 50px;
-  width: 50px;
-  border: 1px solid magenta;
-}
-
-.grab {
-  cursor: grab;
-}
-
-.grabbing {
-  cursor: grabbing;
-  border: 1px dotted;
-}
-.grid {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .selectedEffect {
   background: aqua;
 }
 
-.space-between {
-  padding: 10px;
-  margin-bottom: 5px;
-}
-
 .space-around {
   justify-content: space-around;
+}
+
+.space-between {
+  margin-bottom: 5px;
+  padding: 10px;
 }
