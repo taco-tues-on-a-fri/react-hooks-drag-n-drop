@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import "./index.css";
-import { addIndex } from './utils/helpers.js'
-import DragItem from "./components/DragItem/DragItem";
-import DropItem from "./components/DropItem/DropItem";
+import './index.css';
+import { addIndex } from './utils/helpers.js';
+import DragItem from './components/DragItem/DragItem';
+import DropItem from './components/DropItem/DropItem';
 import ReactDom from 'react-dom';
 import staticJSON from '../resources/json/cat-data.json';
 
@@ -44,7 +44,7 @@ function App() {
           onDrop={id => {
             const currentCard = { ...cardValues[id] };
             currentCard.position = 4;
-            setCardValue({ ...cardValues, ...{ [id]: currentCard } })
+            setCardValue({ ...cardValues, ...{ [id]: currentCard } });
           }}
         >
           {Object.keys(cardValues)
@@ -57,5 +57,5 @@ function App() {
   );
 }
 
-const rootElement = document.getElementById("root");
+const rootElement = document.getElementById('root');
 ReactDom.render(<App />, rootElement);
