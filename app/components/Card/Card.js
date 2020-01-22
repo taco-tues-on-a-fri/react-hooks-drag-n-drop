@@ -1,6 +1,7 @@
 import React from 'react';
 import imageSwitch from '../../utils/imageSwitch';
 import Modal from '../Modal/Modal';
+import PropTypes from 'prop-types';
 import useModal from '../../hooks/useModal';
 
 export default function Card({ type, title, position }) {
@@ -20,3 +21,10 @@ export default function Card({ type, title, position }) {
     </div>
   );
 }
+
+Card.propTypes = {
+  type: PropTypes.string,
+  title: PropTypes.string,
+  position: PropTypes.number
+};
+
