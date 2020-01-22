@@ -5,7 +5,6 @@ import DragItem from "./components/DragItem/DragItem";
 import DropItem from "./components/DropItem/DropItem";
 import ReactDom from 'react-dom';
 import staticJSON from '../resources/json/cat-data.json';
-import util from 'util';
 
 
 function App() {
@@ -13,7 +12,7 @@ function App() {
 
   return (
     <div className="container">
-      <div className="box">
+      <div className="container-column">
         <DropItem
           heading="Slinky Cats"
           onDrop={id => {
