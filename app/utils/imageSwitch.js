@@ -1,4 +1,4 @@
-import shaqCat from '../resources/gif/shaq-cat.gif';
+import shaqCat from '../../resources/gif/shaq-cat.gif';
 
 //| Switch statement to select what gif to return based off of type
 //|------------------------------------------------------------------------
