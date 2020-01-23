@@ -28,7 +28,7 @@ body,
 }
 
 .card-img-top {
-  border-radius: 55px;
+  border-radius: 12px;
   height: 10vw;
   object-fit: cover;
   padding: 0px;
